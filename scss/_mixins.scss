@@ -1,0 +1,64 @@
+
+
+@mixin margin{
+  margin-top: 20px;
+}
+@mixin f-row-b{                  //выровнять в линию с одинаковым растоянием между элементами
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@mixin f-j-center{               //выровнять содержимое блока по центру
+  display: flex;
+  justify-content: center;
+}
+
+@mixin f-a-center-j-around{     // выравнивает блок по центру с одинаковыми отступами элеметов в блоке
+  display: flex;
+  align-self:center;
+  justify-content: space-around;
+}
+@mixin f-d-column-ai-center-jc-center{  // выравнивает элементы в колону по центру(гризонтально и вертикально)
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@mixin f-as-start{                      //выравнивает блок слева
+  display: flex;
+  align-self: flex-start;
+}
+@mixin f-as-end{                        //выравнивает блок справа
+  display: flex;
+  align-self: flex-end;
+}
+
+
+@mixin bp-576 {
+  @media (max-width: 576px) and (min-width: 1px) {
+    @content;
+  }
+}
+@mixin bp-768 {
+  @media (max-width: 768px) and (min-width: 1px) {
+    @content;
+  }
+}
+@mixin bp-960 {
+  @media (max-width: 960px) and (min-width: 768px) {
+    @content;
+  }
+}
+@mixin bp-1000 {
+  @media (max-width: 1000px) and (min-width: 960px) {
+    @content;
+  }
+}
+@mixin bp-1200 {
+  @media (max-width: 1200px) and (min-width: 960px) {
+    @content;
+    @include flex-column;
+  }
+}
+

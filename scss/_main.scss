@@ -1,0 +1,77 @@
+@import "mixins";
+@import "variables";
+@import "forms/stylesOfInput";
+
+*{
+  font-size: 18;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body{
+  background-color: rgb(241, 241, 241);
+}
+a{
+  @include a-none;
+}
+.container{
+  
+  display: flex;
+  flex-direction: column;
+  header{
+    @include f-row-b();
+    @include margin;
+  }
+  div{
+    @include f-j-center();
+    @include margin;
+    
+    section{
+      @include f-a-center-j-around;
+      @include margin;
+      background-color: white;
+      form{
+        width: 60%;
+        @include f-d-column-ai-center-jc-center;
+        @include margin;
+        span{
+          @include f-as-start;
+          color: blue;
+          font-size: 32px;
+        }
+        input[type="text"]{
+          @include margin;
+        }
+        input[type="password"]{
+          @include margin;
+        }
+        input[type="button"]{
+          @include f-as-end;
+          @include margin;
+        }
+        a{
+          @include f-as-end;
+          @include margin;
+        }
+
+        section{
+          width: 100%;
+          display: flex;
+          align-self:flex-start;
+          justify-content: space-between;
+          flex-direction: row;  
+          
+          }
+        }
+      }
+      
+    }
+  }
+  
+
+
+.sign-in-form{
+  width: 632px;
+  height: 416px;
+  border-width: 1px;
+  border-color: rgb(112, 112, 112);
+  box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+}
