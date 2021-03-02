@@ -1,0 +1,30 @@
+{
+  "name": "ht3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "build-css": "node-sass --output main/css  scss",
+    "watch": "nodemon",
+    "start": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IgorHulyaschy/HT3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browser-sync": "^2.26.14",
+    "express": "^4.17.1",
+    "livereload": "^0.9.1",
+    "node-sass": "^5.0.0",
+    "nodemon": "^2.0.7",
+    "reload": "^3.1.1"
+  },
+  "bugs": {
+    "url": "https://github.com/IgorHulyaschy/HT3/issues"
+  },
+  "homepage": "https://github.com/IgorHulyaschy/HT3#readme"
+}
