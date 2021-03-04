@@ -18,7 +18,14 @@ a{
   flex-direction: column;
   header{
     @include f-row-b();
-    @include margin;
+    
+    img{
+      margin-left: 10px;
+    }
+    nav{
+      @include margin;
+      margin-right: 10px;
+    }
   }
   div{
     @include f-j-center();
