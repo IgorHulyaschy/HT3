@@ -31,7 +31,7 @@ a{
     @include f-j-center();
     @include margin;
     
-    section{
+    .wrapper{
       @include f-a-center-j-around;
       @include margin;
       background-color: white;
@@ -41,7 +41,7 @@ a{
         @include margin;
         span{
           @include f-as-start;
-          color: blue;
+          color: rgb(0, 0, 0);
           font-size: 32px;
         }
         input[type="text"]{
@@ -75,7 +75,7 @@ a{
   
 
 
-.sign-in-form{
+.wrapper{
   width: 632px;
   height: 416px;
   border-width: 1px;

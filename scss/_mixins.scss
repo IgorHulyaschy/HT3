@@ -61,4 +61,7 @@
     @include flex-column;
   }
 }
+@mixin bg-color{
+  background-color: rgb(162, 0, 255);
+}
 

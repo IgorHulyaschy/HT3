@@ -19,34 +19,53 @@ input[type="text"], input[type="password"], input[type="button"] {
 
 .inputInRow:focus, .inputForSmthing:focus {
   border-left: groove;
-  border-color: #4040ff;
+  border-color: #a200ff;
   border-width: 4px; }
 
-.signInBut {
+.ButforAction {
   width: 100px;
   height: 50px;
   display: flex;
   justify-content: center;
   font-size: 22px;
   border-radius: 5px;
-  border-color: #3de7f3;
-  background-color: #3de7f3;
+  border-color: #a200ff;
+  background-color: #a200ff;
   color: white;
   cursor: pointer; }
 
-.signInBut:hover {
+.ButforAction:hover {
   font-weight: bold;
   background-color: white;
-  color: #3de7f3; }
+  color: #a200ff; }
 
-.signInBut:active {
-  border-color: #3de7f3;
-  background-color: #3de7f3;
+.ButforAction:active {
+  border-color: #a200ff;
+  background-color: #a200ff;
   color: white; }
 
 a:hover {
   font-size: 16.5px;
   font-weight: bold; }
+
+.navBut {
+  border-width: 2px;
+  border-color: #000;
+  border-radius: 3px;
+  border: groove; }
+
+.navBut:hover {
+  border-width: 2px;
+  border-color: #000;
+  border-radius: 3px;
+  border: groove;
+  background-color: black;
+  color: white;
+  border-width: 0px; }
+
+.logo {
+  height: 59px;
+  width: 150px; }
 
 * {
   font-size: 18;
@@ -56,7 +75,8 @@ body {
   background-color: #f1f1f1; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #000; }
 
 .container {
   display: flex;
@@ -74,44 +94,44 @@ a {
     display: flex;
     justify-content: center;
     margin-top: 20px; }
-    .container div section {
+    .container div .wrapper {
       display: flex;
       align-self: center;
       justify-content: space-around;
       margin-top: 20px;
       background-color: white; }
-      .container div section form {
+      .container div .wrapper form {
         width: 60%;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         margin-top: 20px; }
-        .container div section form span {
+        .container div .wrapper form span {
           display: flex;
           align-self: flex-start;
-          color: blue;
+          color: black;
           font-size: 32px; }
-        .container div section form input[type="text"] {
+        .container div .wrapper form input[type="text"] {
           margin-top: 20px; }
-        .container div section form input[type="password"] {
+        .container div .wrapper form input[type="password"] {
           margin-top: 20px; }
-        .container div section form input[type="button"] {
+        .container div .wrapper form input[type="button"] {
           display: flex;
           align-self: flex-end;
           margin-top: 20px; }
-        .container div section form a {
+        .container div .wrapper form a {
           display: flex;
           align-self: flex-end;
           margin-top: 20px; }
-        .container div section form section {
+        .container div .wrapper form section {
           width: 100%;
           display: flex;
           align-self: flex-start;
           justify-content: space-between;
           flex-direction: row; }
 
-.sign-in-form {
+.wrapper {
   width: 632px;
   height: 416px;
   border-width: 1px;
