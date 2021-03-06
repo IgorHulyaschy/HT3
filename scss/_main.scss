@@ -65,7 +65,7 @@ a{
           align-self:flex-start;
           justify-content: space-between;
           flex-direction: row;  
-          
+          @include bp-576;
           }
         }
       }

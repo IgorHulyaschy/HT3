@@ -9,17 +9,18 @@ input[type="text"], input[type="password"], input[type="button"] {
   padding: 10px;
   border: 0;
   box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+  border-left: 4px solid transparent;
   width: 100%; }
 
 .inputInRow {
   padding: 10px;
   border: 0;
   box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+  border-left: 4px solid transparent;
   width: 40%; }
 
 .inputInRow:focus, .inputForSmthing:focus {
-  border-left: groove;
-  border-color: #a200ff;
+  border-left-color: #a200ff;
   border-width: 4px; }
 
 .ButforAction {
@@ -52,13 +53,9 @@ a:hover {
   border-width: 2px;
   border-color: #000;
   border-radius: 3px;
-  border: groove; }
+  border: solid; }
 
 .navBut:hover {
-  border-width: 2px;
-  border-color: #000;
-  border-radius: 3px;
-  border: groove;
   background-color: black;
   color: white;
   border-width: 0px; }
@@ -130,6 +127,12 @@ a {
           align-self: flex-start;
           justify-content: space-between;
           flex-direction: row; }
+          @media (max-width: 576px) and (min-width: 1px) {
+            .container div .wrapper form section {
+              display: flex;
+              flex-direction: column; }
+              .container div .wrapper form section .inputInRow {
+                width: 100%; } }
 
 .wrapper {
   width: 632px;

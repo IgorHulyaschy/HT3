@@ -6,6 +6,7 @@
 .inputForSmthing{
   @include white-field-text;
   width: 100%;
+  
 }
 .inputInRow{
   @include white-field-text;
@@ -13,8 +14,7 @@
   
 }
 .inputInRow:focus,.inputForSmthing:focus{
-  border-left:groove;
-  border-color: rgb(162, 0, 255);
+  border-left-color: rgb(162, 0, 255);
   border-width: 4px;
 }
 .ButforAction{
@@ -48,7 +48,6 @@ a:hover{
   @include link-but;
 }
 .navBut:hover{
-  @include link-but;
   background-color: black;
   color: white;
   border-width: 0px;
