@@ -46,7 +46,6 @@ input[type="text"], input[type="password"], input[type="button"] {
   color: white; }
 
 a:hover {
-  font-size: 16.5px;
   font-weight: bold; }
 
 .navBut {
@@ -65,8 +64,8 @@ a:hover {
   width: 150px; }
 
 * {
-  font-size: 18;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; }
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: 18; }
 
 body {
   background-color: #f1f1f1; }
@@ -78,6 +77,22 @@ a {
 .container {
   display: flex;
   flex-direction: column; }
+  @media (max-width: 576px) and (min-width: 1px) {
+    .container header img {
+      margin-left: 10px; }
+    .container header nav {
+      margin-right: 10px; }
+    .container .content .wrapper {
+      background-color: white; }
+      .container .content .wrapper form {
+        width: 90%; }
+        .container .content .wrapper form section {
+          display: flex;
+          flex-direction: column; }
+          .container .content .wrapper form section .inputInRow {
+            width: 100%; }
+        .container .content .wrapper form .smallScreen {
+          display: block; } }
   .container header {
     display: flex;
     flex-direction: row;
@@ -87,52 +102,80 @@ a {
     .container header nav {
       margin-top: 20px;
       margin-right: 10px; }
-  .container div {
+  .container .wrapper-for-gradient {
     display: flex;
     justify-content: center;
     margin-top: 20px; }
-    .container div .wrapper {
+    .container .wrapper-for-gradient .gradient {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      width: 40vw;
+      height: 40vw;
+      background: radial-gradient(circle at center, #D8D8D8 40%, #E0E0E0 41%, #E0E0E0 56%, #E8E8E8 57%, #E8E8E8);
+      border-radius: 50%; }
+      .container .wrapper-for-gradient .gradient .mail-img {
+        width: 40%;
+        height: 40%; }
+      .container .wrapper-for-gradient .gradient .capital-font {
+        font-size: 32px;
+        font-weight: bold;
+        margin-top: 20px; }
+  .container .content {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; }
+    .container .content .wrapper {
       display: flex;
       align-self: center;
       justify-content: space-around;
       margin-top: 20px;
       background-color: white; }
-      .container div .wrapper form {
+      .container .content .wrapper form {
         width: 60%;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         margin-top: 20px; }
-        .container div .wrapper form span {
+        .container .content .wrapper form span {
           display: flex;
           align-self: flex-start;
           color: black;
           font-size: 32px; }
-        .container div .wrapper form input[type="text"] {
+        .container .content .wrapper form input[type="text"] {
           margin-top: 20px; }
-        .container div .wrapper form input[type="password"] {
+        .container .content .wrapper form input[type="password"] {
           margin-top: 20px; }
-        .container div .wrapper form input[type="button"] {
+        .container .content .wrapper form input[type="button"] {
           display: flex;
           align-self: flex-end;
           margin-top: 20px; }
-        .container div .wrapper form a {
+        .container .content .wrapper form a {
           display: flex;
           align-self: flex-end;
           margin-top: 20px; }
-        .container div .wrapper form section {
+        .container .content .wrapper form .name-lastName {
           width: 100%;
           display: flex;
-          align-self: flex-start;
           justify-content: space-between;
           flex-direction: row; }
-          @media (max-width: 576px) and (min-width: 1px) {
-            .container div .wrapper form section {
-              display: flex;
-              flex-direction: column; }
-              .container div .wrapper form section .inputInRow {
-                width: 100%; } }
+        .container .content .wrapper form .login-password {
+          width: 100%;
+          display: flex;
+          flex-direction: column; }
+        .container .content .wrapper form .smallScreen {
+          display: none; }
+        .container .content .wrapper form .wrapper-checkbox {
+          width: 100%; }
+          .container .content .wrapper form .wrapper-checkbox .wrapper-line {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: row; }
+            .container .content .wrapper form .wrapper-checkbox .wrapper-line a {
+              color: #0000c5;
+              margin-top: 0; }
 
 .wrapper {
   width: 632px;
