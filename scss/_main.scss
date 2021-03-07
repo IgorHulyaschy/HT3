@@ -3,8 +3,8 @@
 @import "forms/stylesOfInput";
 
 *{
-  font-size: 18;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: $font-family;
+  font-size: $font-size;
 }
 body{
   background-color: rgb(241, 241, 241);
@@ -13,7 +13,7 @@ a{
   @include a-none;
 }
 .container{
-  
+  @include bp-576;
   display: flex;
   flex-direction: column;
   header{
@@ -27,8 +27,30 @@ a{
       margin-right: 10px;
     }
   }
-  div{
-    @include f-j-center();
+  .wrapper-for-gradient{
+    
+    display: flex;
+    justify-content: center;
+    @include margin;
+    .gradient{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      @include gradient;
+      .mail-img{
+        width: 40%;
+        height: 40%;
+      }
+      .capital-font{
+        @include capital-text;
+        @include margin;
+      }
+
+    }
+  }
+  .content{
+    @include f-j-center;
     @include margin;
     
     .wrapper{
@@ -59,14 +81,33 @@ a{
           @include margin;
         }
 
-        section{
+        .name-lastName{
           width: 100%;
           display: flex;
-          align-self:flex-start;
           justify-content: space-between;
           flex-direction: row;  
-          @include bp-576;
+        }
+        .login-password{
+          width: 100%;
+          display: flex;
+          flex-direction: column;  
+        }
+        .smallScreen{
+          display: none;
+        }
+        .wrapper-checkbox{
+          width: 100%;
+          .wrapper-line{
+            a{
+              color: rgb(0, 0, 197);
+              margin-top: 0;
+            }
+            @include margin;
+            display: flex;
+            flex-direction: row;
           }
+
+        }
         }
       }
       
