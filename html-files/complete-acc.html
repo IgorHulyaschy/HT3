@@ -17,17 +17,19 @@
         <a href="../index.html" class="navBut">Log in</a>
       </nav>
     </header>
-    <div>
+    <div class="content">
       <section class="wrapper">
         <form>
           <span>Complete your account</span>
           <input type="password" placeholder="Password" class="inputForSmthing">
           <input type="password" placeholder="Confirm password" class="inputForSmthing">
-          <input type="button" value="Done!" class="ButforAction">
           <section class="wrapper-checkbox"> 
-            <input type="checkbox"><label for="">I agree to HOOD <a>Terms of Service</a></label>
-            <input type="checkbox"><label for="">I agree to HOOD <a>Privacy Police</a></label>
+            <div class="wrapper-line"><input type="checkbox" id="item_1"><label for="item_1">I agree to HOOD </label><a>&nbsp Terms of Service</a></div>
+            <section class="wrapper-line"><input type="checkbox" id="item_2"><label for="item_2">I agree to HOOD </label><a>&nbsp Privacy Police</a></section>
           </section>
+          <div class="g-recaptcha" data-sitekey="6LfrHHYaAAAAAO5f8HlOZd_rCfbgvFslu1H9IwzZ"></div>
+          <input type="button" value="Done!" class="ButforAction">
+
 
         </form>
       </section>
@@ -35,5 +37,6 @@
 
   </div>
   <script src="/reload/reload.js"></script>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </body>
 </html>
