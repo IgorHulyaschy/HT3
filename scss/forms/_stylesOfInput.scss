@@ -5,6 +5,7 @@
 
 .inputForSmthing{
   @include white-field-text;
+  
   width: 100%;
   
 }
@@ -54,4 +55,7 @@ a:hover{
 .logo{
   height:59px; 
   width:150px;
+}
+.select-list{
+  @include select-list;
 }

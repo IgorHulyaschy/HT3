@@ -108,17 +108,241 @@ a{
           }
 
         }
+        .g-recaptcha{
+          @include margin;
+          display: flex;
+          align-self: flex-start;
         }
       }
-      
+    }   
+  }
+}
+.main-wrap{
+  margin-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  .container-profile{
+    display: flex;
+    flex-direction: row;
+    .wrapper-menu{
+      display: flex;
+      flex-direction: column;
+      width: 90px;
+      height: 100vh;
+      background-color: black;
+      .logo-small{
+        @include margin;
+        width: 90px;
+        height: 75px;
+      }
+      .menu{
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        flex-direction: column;
+        width: 100%;
+        @include margin;
+        i{
+          @include margin;
+          cursor: pointer;
+          display: flex;
+          justify-content: center;
+          width: 100%;
+          color: grey;
+          font-size: 35px;
+        }
+        i:hover{
+          color: white;
+        }
+        i:active{
+          color: white;
+          border-left: solid white 2px;
+        }
+      }
+    }
+    .wrapper-content{
+      width: 95vw;
+      height: 100vh;
+      background-color: rgb(241, 241, 241);
+      header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 50px;
+        border-bottom: solid 1px rgb(212, 212, 212);
+        background-color: rgb(255, 255, 255);
+        border-bottom-right-radius: 5px;
+        .path, .account-main{
+          padding: 10px;
+        }
+      }
+      .wrapper-profile-content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .profile-content{
+          @include margin;
+          width: 90%;
+          height: 80vh;
+          background-color: white;
+          border-radius: 5px;
+          display: flex;
+          justify-content: center;
+          .wrap{
+            width: 70%;
+            .cont{
+              width: 70%;
+              .info{
+                display: flex;
+                flex-direction: row;
+
+                .navProfile{
+                  color: rgb(212, 212, 212);
+                  display: flex;
+                  justify-content: center;
+                  font-size: 28px;
+                  @include margin;
+                  width: 50%;
+                  border-bottom: solid grey 2px;
+                }
+              }
+              .user-settings{
+                @include margin;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 95%;
+                .wrapper-user-photo{
+                  width: 20%;
+                }
+                .wrapper-user-col1{
+                  width: 30%;
+                  @include margin;
+                  .inputForSmthing{
+                    
+                  }
+                  .setting{
+                    display: flex;
+                    flex-direction: column;
+                    span{
+                      @include margin;
+                      color: rgb(182, 182, 182);
+                    }
+                    
+                }
+              }
+                .wrapper-user-col2{
+                  width: 30%;
+                  @include margin;
+                  .inputForSmthing{
+                    
+                  }
+                  .setting{
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    span{
+                      @include margin;
+                      color: rgb(182, 182, 182);
+                    }
+                    div{
+                      .vodiapicker{
+                        display: none; 
+                      }
+                      
+                      #a{
+                        padding-left: 0px;
+                      }
+                      
+                      #a img, .btn-select img{
+                        width: 30px;
+                        
+                      }
+                      
+                      #a li{
+                        list-style: none;
+                        padding-top: 5px;
+                        padding-bottom: 5px;
+                      }
+                      
+                      #a li:hover{
+                      background-color: #F4F3F3;
+                      }
+                      
+                      #a li img{
+                        margin: 5px;
+                      }
+                      
+                      #a li span, .btn-select li span{
+                        margin-left: 30px;
+                      }
+                      
+                      /* item list */
+                      
+                      .b{
+                        display: none;
+                        width: 100%;
+                        max-width: 47px;
+                        box-shadow: 0 6px 12px rgba(0,0,0,.175);
+                        border: 1px solid rgba(0,0,0,.15);
+                        border-radius: 5px;
+                        
+                      }
+                      
+                      .open{
+                        display: show !important;
+                      }
+                      
+                      .btn-select{
+                        
+                        
+                        width: 100%;
+                        max-width: 47px;
+                        height: 34px;
+                        border-radius: 5px;
+                        background-color: #fff;
+                        border: 1px solid #ccc;
+                      
+                      }
+                      .btn-select li{
+                        list-style: none;
+                        float: left;
+                        padding-bottom: 0px;
+                      }
+                      
+                      .btn-select:hover li{
+                        margin-left: 0px;
+                      }
+                      
+                      .btn-select:hover{
+                        background-color: #F4F3F3;
+                        border: 1px solid transparent;
+                        box-shadow: inset 0 0px 0px 1px #ccc;
+                        
+                        
+                      }
+                      
+                      .btn-select:focus{
+                        outline:none;
+                      }
+                      
+                      
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
-  
+}
 
 
 .wrapper{
   width: 632px;
-  height: 416px;
+  height: 500px;
   border-width: 1px;
   border-color: rgb(112, 112, 112);
   box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
