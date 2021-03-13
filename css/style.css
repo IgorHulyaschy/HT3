@@ -63,6 +63,11 @@ a:hover {
   height: 59px;
   width: 150px; }
 
+.select-list {
+  padding: 10px;
+  border: 0;
+  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06); }
+
 * {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   font-size: 18; }
@@ -176,10 +181,166 @@ a {
             .container .content .wrapper form .wrapper-checkbox .wrapper-line a {
               color: #0000c5;
               margin-top: 0; }
+        .container .content .wrapper form .g-recaptcha {
+          margin-top: 20px;
+          display: flex;
+          align-self: flex-start; }
+
+.main-wrap {
+  margin-left: 0;
+  margin-top: 0;
+  margin-bottom: 0; }
+  .main-wrap .container-profile {
+    display: flex;
+    flex-direction: row; }
+    .main-wrap .container-profile .wrapper-menu {
+      display: flex;
+      flex-direction: column;
+      width: 90px;
+      height: 100vh;
+      background-color: black; }
+      .main-wrap .container-profile .wrapper-menu .logo-small {
+        margin-top: 20px;
+        width: 90px;
+        height: 75px; }
+      .main-wrap .container-profile .wrapper-menu .menu {
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 20px; }
+        .main-wrap .container-profile .wrapper-menu .menu i {
+          margin-top: 20px;
+          cursor: pointer;
+          display: flex;
+          justify-content: center;
+          width: 100%;
+          color: grey;
+          font-size: 35px; }
+        .main-wrap .container-profile .wrapper-menu .menu i:hover {
+          color: white; }
+        .main-wrap .container-profile .wrapper-menu .menu i:active {
+          color: white;
+          border-left: solid white 2px; }
+    .main-wrap .container-profile .wrapper-content {
+      width: 95vw;
+      height: 100vh;
+      background-color: #f1f1f1; }
+      .main-wrap .container-profile .wrapper-content header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 50px;
+        border-bottom: solid 1px #d4d4d4;
+        background-color: white;
+        border-bottom-right-radius: 5px; }
+        .main-wrap .container-profile .wrapper-content header .path, .main-wrap .container-profile .wrapper-content header .account-main {
+          padding: 10px; }
+      .main-wrap .container-profile .wrapper-content .wrapper-profile-content {
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .main-wrap .container-profile .wrapper-content .wrapper-profile-content .profile-content {
+          margin-top: 20px;
+          width: 90%;
+          height: 80vh;
+          background-color: white;
+          border-radius: 5px;
+          display: flex;
+          justify-content: center; }
+          .main-wrap .container-profile .wrapper-content .wrapper-profile-content .profile-content .wrap {
+            width: 70%; }
+            .main-wrap .container-profile .wrapper-content .wrapper-profile-content .profile-content .wrap .cont {
+              width: 70%; }
+              .main-wrap .container-profile .wrapper-content .wrapper-profile-content .profile-content .wrap .cont .info {
+                display: flex;
+                flex-direction: row; }
+                .main-wrap .container-profile .wrapper-content .wrapper-profile-content .profile-content .wrap .cont .info .navProfile {
+                  color: #d4d4d4;
+                  display: flex;
+                  justify-content: center;
+                  font-size: 28px;
+                  margin-top: 20px;
+                  width: 50%;
+                  border-bottom: solid grey 2px; }
+              .main-wrap .container-profile .wrapper-content .wrapper-profile-content .profile-content .wrap .cont .user-settings {
+                margin-top: 20px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 95%; }
+                .main-wrap .container-profile .wrapper-content .wrapper-profile-content .profile-content .wrap .cont .user-settings .wrapper-user-photo {
+                  width: 20%; }
+                .main-wrap .container-profile .wrapper-content .wrapper-profile-content .profile-content .wrap .cont .user-settings .wrapper-user-col1 {
+                  width: 30%;
+                  margin-top: 20px; }
+                  .main-wrap .container-profile .wrapper-content .wrapper-profile-content .profile-content .wrap .cont .user-settings .wrapper-user-col1 .setting {
+                    display: flex;
+                    flex-direction: column; }
+                    .main-wrap .container-profile .wrapper-content .wrapper-profile-content .profile-content .wrap .cont .user-settings .wrapper-user-col1 .setting span {
+                      margin-top: 20px;
+                      color: #b6b6b6; }
+                .main-wrap .container-profile .wrapper-content .wrapper-profile-content .profile-content .wrap .cont .user-settings .wrapper-user-col2 {
+                  width: 30%;
+                  margin-top: 20px; }
+                  .main-wrap .container-profile .wrapper-content .wrapper-profile-content .profile-content .wrap .cont .user-settings .wrapper-user-col2 .setting {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%; }
+                    .main-wrap .container-profile .wrapper-content .wrapper-profile-content .profile-content .wrap .cont .user-settings .wrapper-user-col2 .setting span {
+                      margin-top: 20px;
+                      color: #b6b6b6; }
+                    .main-wrap .container-profile .wrapper-content .wrapper-profile-content .profile-content .wrap .cont .user-settings .wrapper-user-col2 .setting div {
+                      /* item list */ }
+                      .main-wrap .container-profile .wrapper-content .wrapper-profile-content .profile-content .wrap .cont .user-settings .wrapper-user-col2 .setting div .vodiapicker {
+                        display: none; }
+                      .main-wrap .container-profile .wrapper-content .wrapper-profile-content .profile-content .wrap .cont .user-settings .wrapper-user-col2 .setting div #a {
+                        padding-left: 0px; }
+                      .main-wrap .container-profile .wrapper-content .wrapper-profile-content .profile-content .wrap .cont .user-settings .wrapper-user-col2 .setting div #a img, .main-wrap .container-profile .wrapper-content .wrapper-profile-content .profile-content .wrap .cont .user-settings .wrapper-user-col2 .setting div .btn-select img {
+                        width: 30px; }
+                      .main-wrap .container-profile .wrapper-content .wrapper-profile-content .profile-content .wrap .cont .user-settings .wrapper-user-col2 .setting div #a li {
+                        list-style: none;
+                        padding-top: 5px;
+                        padding-bottom: 5px; }
+                      .main-wrap .container-profile .wrapper-content .wrapper-profile-content .profile-content .wrap .cont .user-settings .wrapper-user-col2 .setting div #a li:hover {
+                        background-color: #F4F3F3; }
+                      .main-wrap .container-profile .wrapper-content .wrapper-profile-content .profile-content .wrap .cont .user-settings .wrapper-user-col2 .setting div #a li img {
+                        margin: 5px; }
+                      .main-wrap .container-profile .wrapper-content .wrapper-profile-content .profile-content .wrap .cont .user-settings .wrapper-user-col2 .setting div #a li span, .main-wrap .container-profile .wrapper-content .wrapper-profile-content .profile-content .wrap .cont .user-settings .wrapper-user-col2 .setting div .btn-select li span {
+                        margin-left: 30px; }
+                      .main-wrap .container-profile .wrapper-content .wrapper-profile-content .profile-content .wrap .cont .user-settings .wrapper-user-col2 .setting div .b {
+                        display: none;
+                        width: 100%;
+                        max-width: 47px;
+                        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+                        border: 1px solid rgba(0, 0, 0, 0.15);
+                        border-radius: 5px; }
+                      .main-wrap .container-profile .wrapper-content .wrapper-profile-content .profile-content .wrap .cont .user-settings .wrapper-user-col2 .setting div .open {
+                        display: show !important; }
+                      .main-wrap .container-profile .wrapper-content .wrapper-profile-content .profile-content .wrap .cont .user-settings .wrapper-user-col2 .setting div .btn-select {
+                        width: 100%;
+                        max-width: 47px;
+                        height: 34px;
+                        border-radius: 5px;
+                        background-color: #fff;
+                        border: 1px solid #ccc; }
+                      .main-wrap .container-profile .wrapper-content .wrapper-profile-content .profile-content .wrap .cont .user-settings .wrapper-user-col2 .setting div .btn-select li {
+                        list-style: none;
+                        float: left;
+                        padding-bottom: 0px; }
+                      .main-wrap .container-profile .wrapper-content .wrapper-profile-content .profile-content .wrap .cont .user-settings .wrapper-user-col2 .setting div .btn-select:hover li {
+                        margin-left: 0px; }
+                      .main-wrap .container-profile .wrapper-content .wrapper-profile-content .profile-content .wrap .cont .user-settings .wrapper-user-col2 .setting div .btn-select:hover {
+                        background-color: #F4F3F3;
+                        border: 1px solid transparent;
+                        box-shadow: inset 0 0px 0px 1px #ccc; }
+                      .main-wrap .container-profile .wrapper-content .wrapper-profile-content .profile-content .wrap .cont .user-settings .wrapper-user-col2 .setting div .btn-select:focus {
+                        outline: none; }
 
 .wrapper {
   width: 632px;
-  height: 416px;
+  height: 500px;
   border-width: 1px;
   border-color: #707070;
   box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06); }
