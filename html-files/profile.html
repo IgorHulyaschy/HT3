@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/js/select2.js" defer></script>
+  <script src="select-script.js"defer></script>
+
+  <script src="https://kit.fontawesome.com/4a93b75334.js" crossorigin="anonymous"></script>
+  <title>Document</title>
+</head>
+<body class="main-wrap">
+  <div class="container-profile">
+    <div class="wrapper-menu">
+      <img class="logo-small" src="../css/images/logo-small.png">
+      <nav class="menu">
+        <a href="#"><i class="fas fa-search"></i></a>
+        <a href="#"><i class="far fa-user"></i></a>
+        <a href="#"> <i class="far fa-envelope"></i></a>
+        <a href="#"><i class="fas fa-calendar-alt"></i></a>
+      </nav>
+    </div>
+    
+    <div class="wrapper-content">
+      <header>
+        <span class="path">Home > My profile</span>
+        <nav class="account-main">
+          Igor Hulyaschy 
+        </nav>
+      </header>
+      <section class="wrapper-profile-content">
+        <div class="profile-content">
+          <div class="wrap">
+            <div class="cont">
+              <nav class="info">
+                <a class="navProfile" href="#">Personal information</a>
+                <a class="navProfile" href="#">Account information</a>
+              </nav>
+              <div class="user-settings">
+                <section class="wrapper-user-photo">
+                  <input type="file" accept="image/*">
+                </section>
+                <section class="wrapper-user-col1">
+                  <div class="setting"><span>First name</span>
+                    <input type="text" class="inputForSmthing">
+                  </div>
+                  <div class="setting"><span>Title</span>
+                    <select class="select-list">
+                      <option>Select title</option>
+                      <option>Mr</option>
+                      <option>Mrs</option>
+                    </select>
+                  </div>
+                  <div class="setting"><span>Country</span>
+                    <select class="select-list">
+                      <option>Select country</option>
+                      <option>Ukraine</option>
+                      <option>Russia</option>
+                      <option>France</option>
+                    </select>
+                  </div>
+                </section>
+                <section class="wrapper-user-col2">
+                  <div class="setting"><span>Last name</span>
+                    <input type="text" class="inputForSmthing">
+                  </div>
+                  
+                  <div class="setting"><span>Company</span>
+                    <input type="text" class="inputForSmthing">
+                  </div>
+                  <div class="setting"><span>Mobile phone</span>
+                    <div>
+                      <select class="vodiapicker">
+                        <option value="en" class="test" data-thumbnail="../css/images/flags/belarus.png"></option>
+                        <option value="uk" data-thumbnail="../css/images/flags/ukraine.png"></option>
+                        <option value="cn" data-thumbnail="../css/images/flags/russia.png"></option>
+                        <option value="de" data-thumbnail="../css/images/flags/usa.png"></option>
+                        <option value="dk" data-thumbnail="../css/images/flags/canada.png"></option>
+                        <option value="fr" data-thumbnail="../css/images/flags/france.png"></option>
+                      </select>
+            
+                      <div class="lang-select">
+                        <button class="btn-select" value=""></button>
+                        <div class="b">
+                          <ul id="a"></ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</body>
+</html>
